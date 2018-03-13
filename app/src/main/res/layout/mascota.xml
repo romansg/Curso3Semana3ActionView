@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:padding="@dimen/CARDVIEW_FOTO_PADDING"
+    cardview:cardCornerRadius="@dimen/CARDVIEW_CORNER_RADIUS">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivPetPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/FOTO_BACKGROUND"
+            android:contentDescription="@string/FOTO_DESCR"
+            android:padding="5dp"
+            cardview:srcCompat="@drawable/fiona" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fadingEdge="none"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+                    android:id="@+id/ivEmtyBone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="@dimen/MARGIN_HPORIZONTAL"
+                    android:layout_marginStart="@dimen/MARGIN_HPORIZONTAL"
+                    android:contentDescription="@string/RATE_DESCR"
+                    android:scaleType="centerCrop"
+                    cardview:srcCompat="@drawable/bone_empty" />
+
+                <TextView
+                    android:id="@+id/tvPetName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/MARGIN_HPORIZONTAL"
+                    android:gravity="center_vertical"
+                    android:text="@string/PET_NAME" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPetLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/MARGIN_HPORIZONTAL"
+                    android:gravity="center_vertical"
+                    android:text="@string/PET_LIKES"
+                    android:textAlignment="viewStart" />
+
+                <ImageView
+                    android:id="@+id/ivFilledBone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="@dimen/MARGIN_HPORIZONTAL"
+                    android:layout_marginStart="@dimen/MARGIN_HPORIZONTAL"
+                    android:contentDescription="@string/RATINGS_DESCR"
+                    android:scaleType="centerCrop"
+                    cardview:srcCompat="@drawable/bone_filled" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

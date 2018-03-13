@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="FOTO_DESCR">Imagen de la mascota</string>
+    <string name="RATE_DESCR">Imagen para calificar la mascota</string>
+    <string name="RATINGS_DESCR">Imagen para indicar la calificación de la mascota</string>
+    <string name="PET_NAME">Mascota</string>
+    <string name="PET_LIKES">5</string>
+</resources>
