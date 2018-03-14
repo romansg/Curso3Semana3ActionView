@@ -4,8 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.Toast;
-
+import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar appbar = findViewById(R.id.appbar);
+        setSupportActionBar(appbar);
 
         rvMascotas = findViewById(R.id.rvMascotas);
 

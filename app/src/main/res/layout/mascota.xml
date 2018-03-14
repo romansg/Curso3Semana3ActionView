@@ -38,16 +38,6 @@
                 android:gravity="start"
                 android:orientation="horizontal">
 
-                <!--<ImageView
-                    android:id="@+id/ivEmptyBone"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginEnd="@dimen/MARGIN_HPORIZONTAL"
-                    android:layout_marginStart="@dimen/MARGIN_HPORIZONTAL"
-                    android:contentDescription="@string/RATE_DESCR"
-                    android:scaleType="centerCrop"
-                    cardview:srcCompat="@drawable/bone_empty" />-->
-
                 <ImageButton
                     android:id="@+id/btnPetLike"
                     android:layout_width="25dp"

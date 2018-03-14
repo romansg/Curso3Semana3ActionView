@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context="com.romansg.curso3semana3.MainActivity">
 
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/actionbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/rvMascotas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"></include>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvMascotas"
         android:layout_width="0dp"
@@ -15,5 +27,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/appbar" />
 </android.support.constraint.ConstraintLayout>

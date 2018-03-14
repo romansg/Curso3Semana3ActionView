@@ -6,4 +6,5 @@
     <dimen name="CARDVIEW_MARGIN_HORIZONTAL">8dp</dimen>
     <dimen name="CARDVIEW_MARGIN_VERTICAL">8dp</dimen>
     <dimen name="CARDVIEW_ELEVATION">4dp</dimen>
+    <dimen name="ACTIONBAR_ELEVATION">4dp</dimen>
 </resources>
