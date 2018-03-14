@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/CARDVIEW_MARGIN_VERTICAL"
@@ -52,7 +51,7 @@
                     android:id="@+id/tvPetName"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/MARGIN_HPORIZONTAL"
+                    android:layout_marginStart="@dimen/MARGIN_HORIZONTAL"
                     android:gravity="center_vertical"
                     android:text="@string/PET_NAME" />
             </LinearLayout>
@@ -68,7 +67,7 @@
                     android:id="@+id/tvPetLikes"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginEnd="@dimen/MARGIN_HPORIZONTAL"
+                    android:layout_marginEnd="@dimen/MARGIN_HORIZONTAL"
                     android:gravity="center_vertical"
                     android:text="@string/PET_LIKES" />
 
@@ -76,8 +75,8 @@
                     android:id="@+id/ivFilledBone"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_marginEnd="@dimen/MARGIN_HPORIZONTAL"
-                    android:layout_marginStart="@dimen/MARGIN_HPORIZONTAL"
+                    android:layout_marginEnd="@dimen/MARGIN_HORIZONTAL"
+                    android:layout_marginStart="@dimen/MARGIN_HORIZONTAL"
                     android:contentDescription="@string/RATINGS_DESCR"
                     android:scaleType="centerCrop"
                     cardview:srcCompat="@drawable/bone_filled" />

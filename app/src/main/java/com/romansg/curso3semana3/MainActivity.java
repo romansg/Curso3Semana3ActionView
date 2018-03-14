@@ -1,10 +1,13 @@
 package com.romansg.curso3semana3;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void inicializarMascotas() {
         mascotas = new ArrayList<Mascota>();
+
         mascotas.add(new Mascota("Abby", R.drawable.abby));
         mascotas.add(new Mascota("Bunny", R.drawable.bunny));
         mascotas.add(new Mascota("Carrot", R.drawable.carrot));
@@ -40,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         mascotas.add(new Mascota("Fiona", R.drawable.fiona));
         mascotas.add(new Mascota("Loki", R.drawable.loki));
         mascotas.add(new Mascota("Milo", R.drawable.milo));
-//        mascotas.add(new Mascota("Morgan", R.drawable.morgan));
+        mascotas.add(new Mascota("Morgan", R.drawable.morgan));
         mascotas.add(new Mascota("Oscar", R.drawable.oscar));
         mascotas.add(new Mascota("Puffy", R.drawable.puffy));
         mascotas.add(new Mascota("Rabito", R.drawable.rabito));
@@ -55,5 +59,14 @@ public class MainActivity extends AppCompatActivity {
     public void inicializarAdaptador() {
         MascotaAdaptador adpatador = new MascotaAdaptador(mascotas, this);
         rvMascotas.setAdapter(adpatador);
+    }
+
+    public void verMascotasFavoritas(View view) {
+        Intent intent = new Intent(MainActivity.this, MascotasFavoritasActivity.class);
+
+        int[] favoritas = {1, 6, 9, 11, 13};
+        intent.putExtra("favoritas", favoritas);
+
+        startActivity(intent);
     }
 }
