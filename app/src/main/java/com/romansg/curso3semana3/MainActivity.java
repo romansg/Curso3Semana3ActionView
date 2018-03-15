@@ -25,10 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         rvMascotas = findViewById(R.id.rvMascotas);
 
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setOrientation(LinearLayoutManager.VERTICAL);rvMascotas.setLayoutManager(llm);
-
         inicializarMascotas();
+        inicializarManager();
         inicializarAdaptador();
     }
 
@@ -61,12 +59,13 @@ public class MainActivity extends AppCompatActivity {
         rvMascotas.setAdapter(adpatador);
     }
 
+    public void inicializarManager() {
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        llm.setOrientation(LinearLayoutManager.VERTICAL);rvMascotas.setLayoutManager(llm);
+    }
+
     public void verMascotasFavoritas(View view) {
         Intent intent = new Intent(MainActivity.this, MascotasFavoritasActivity.class);
-
-        int[] favoritas = {1, 6, 9, 11, 13};
-        intent.putExtra("favoritas", favoritas);
-
         startActivity(intent);
     }
 }

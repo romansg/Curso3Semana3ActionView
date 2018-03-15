@@ -16,6 +16,8 @@ public class MascotasFavoritasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mascotas_favoritas);
 
+        Bundle extras = getIntent().getExtras();
+
         Toolbar appbar = findViewById(R.id.appbar);
         setSupportActionBar(appbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

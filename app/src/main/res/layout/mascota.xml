@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:background="@color/FOTO_BACKGROUND"
             android:contentDescription="@string/FOTO_DESCR"
-            android:padding="5dp"
+            android:padding="@dimen/CARDVIEW_FOTO_PADDING"
             cardview:srcCompat="@drawable/fiona" />
 
         <LinearLayout
@@ -39,8 +39,8 @@
 
                 <ImageButton
                     android:id="@+id/btnPetLike"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:background="@android:color/transparent"
                     android:contentDescription="@string/RATINGS_DESCR"
                     android:padding="0dp"
@@ -53,7 +53,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/MARGIN_HORIZONTAL"
                     android:gravity="center_vertical"
-                    android:text="@string/PET_NAME" />
+                    android:text="@string/PET_NAME"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -69,12 +70,13 @@
                     android:layout_height="match_parent"
                     android:layout_marginEnd="@dimen/MARGIN_HORIZONTAL"
                     android:gravity="center_vertical"
-                    android:text="@string/PET_LIKES" />
+                    android:text="@string/PET_LIKES"
+                    android:textSize="18sp" />
 
                 <ImageView
                     android:id="@+id/ivFilledBone"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:layout_marginEnd="@dimen/MARGIN_HORIZONTAL"
                     android:layout_marginStart="@dimen/MARGIN_HORIZONTAL"
                     android:contentDescription="@string/RATINGS_DESCR"
