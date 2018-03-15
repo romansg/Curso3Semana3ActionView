@@ -39,6 +39,12 @@ public class MascotasFavoritasActivity extends AppCompatActivity {
         mascotas.add(new Mascota("Morgan", R.drawable.morgan));
         mascotas.add(new Mascota("Puffy", R.drawable.puffy));
         mascotas.add(new Mascota("Scooter", R.drawable.scooter));
+
+        mascotas.get(0).setLikes(5);
+        mascotas.get(1).setLikes(3);
+        mascotas.get(2).setLikes(6);
+        mascotas.get(3).setLikes(5);
+        mascotas.get(4).setLikes(8);
     }
 
     public void inicializarAdaptador() {
