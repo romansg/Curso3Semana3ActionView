@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -28,6 +30,24 @@ public class MainActivity extends AppCompatActivity {
         inicializarMascotas();
         inicializarManager();
         inicializarAdaptador();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_opciones, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.mFavoritos:
+                Intent intent = new Intent(MainActivity.this, MascotasFavoritasActivity.class);
+                startActivity(intent);
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     public void inicializarMascotas() {
@@ -62,10 +82,5 @@ public class MainActivity extends AppCompatActivity {
     public void inicializarManager() {
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);rvMascotas.setLayoutManager(llm);
-    }
-
-    public void verMascotasFavoritas(View view) {
-        Intent intent = new Intent(MainActivity.this, MascotasFavoritasActivity.class);
-        startActivity(intent);
     }
 }
