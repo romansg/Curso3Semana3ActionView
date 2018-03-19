@@ -4,9 +4,7 @@ El proyecto está diseñado para una versión mínima de **Android 18 (Jelly Bea
 
 ## Observación
 
-En la actividad de esta semana se pide agregar un **Action View** en la AppBar pero esto se ve hasta la semana 4, al final del tema de menús. Entonces, lo que hice fue poner un ImageView sobre la AppBar (es decir, no está *dentro* de la barra sino *encima*) con la misma funcionalidad.
-
-Por otra parte, el botón de huesito blanco muestra un mensaje *toast* e incrementa el número de *likes* aunque sólo de forma local, es decir, los datos no preservan una vez cerrada la app.
+En esta copia del repositorio quitamos el ImageButton de estrella y lo sustituimos por un ActionView.
 
 ## Pantallazos
 
